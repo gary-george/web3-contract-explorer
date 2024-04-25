@@ -1,0 +1,266 @@
+.connected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 11px;
+  background-color: #11131c;
+  color: white;
+}
+
+.itemLight {
+  background-color: white;
+  color: #666;
+}
+
+.key {
+  font-weight: 600;
+}
+
+.addressLabel {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.addressLabelLight {
+  color: #666;
+}
+
+.addressInput {
+  width: 450px;
+  height: 50px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  color: #222;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-around;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.buttonsContainerSingle {
+  justify-content: flex-end;
+}
+
+.buttonsContainerGetData {
+  justify-content: flex-end;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 11px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #11131c;
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(105, 65, 230);
+}
+
+.buttonLight {
+  background-color: white;
+  color: #666;
+}
+
+.buttonLight:hover {
+  background-color: rgb(201, 62, 103);
+  color: #fff;
+}
+
+.exampleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 11px;
+  background-color: #11131c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  cursor: pointer;
+}
+
+.exampleContainerLight {
+  background-color: white;
+  color: #666;
+}
+
+.exampleContainer:hover {
+  background-color: rgb(105, 65, 230);
+}
+
+.exampleContainerLight:hover {
+  background-color: rgb(201, 62, 103);
+  color: #fff;
+}
+
+.exampleAddresses {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.spinner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.txHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 450px;
+  height: 405px;
+  color: white;
+  position: relative;
+}
+
+.txhistoryPagData {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: white;
+}
+
+.txhistoryPagDataLight {
+  color: #11131c;
+}
+
+.txHistoryLight {
+  color: #11131c;
+}
+
+.txHistoryItem {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 3px;
+  background: #11131c;
+  border-radius: 12px;
+}
+
+.txHistoryItemLight {
+  background: white;
+}
+
+.txHistoryItemKey {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.txHistoryItemValue {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.txHistoryButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 50px;
+}
+
+.txHistoryButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.txHistoryButtonLight {
+  color: #11131c;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (max-width: 550px) {
+  .addressInput,
+  .buttonsContainer,
+  .exampleContainer {
+    width: 290px;
+  }
+
+  .userData,
+  .item,
+  .txHistory {
+    width: 310px;
+  }
+
+  .addressLabel {
+    font-size: 15px;
+  }
+
+  .exampleAddresses,
+  .key,
+  .value,
+  .txHistoryItemKey {
+    font-size: 13px;
+    margin-left: 7px;
+  }
+
+  .button {
+    width: 135px;
+  }
+
+  .txHistoryItemValue {
+    font-size: 11px;
+    margin-left: 7px;
+  }
+}

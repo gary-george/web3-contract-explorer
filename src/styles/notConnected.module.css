@@ -1,0 +1,29 @@
+.NotConnected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+.NotConnected p {
+  font-weight: 600;
+}
+
+.NotConnectedLight {
+  color: #11131c;
+}
+
+.NotConnected p {
+  margin: -50px 0 0 0;
+  padding: 0;
+}
+
+@media (max-width: 550px) {
+  .NotConnected {
+    font-size: 14px;
+  }
+}

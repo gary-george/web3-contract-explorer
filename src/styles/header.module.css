@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background: #11131c;
+  border-bottom: 1px solid #030408;
+  height: 80px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  z-index: 100;
+}
+
+.headerLight {
+  border-bottom: 1px solid #fff;
+  background: #f9f9fb;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.toggleLight {
+  /* background-color: #4119b3; */
+  background-color: #e8e8e8;
+  color: #999;
+}
+
+.wcButton {
+  background: #11131c;
+  border-radius: 30px;
+}
