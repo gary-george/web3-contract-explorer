@@ -9,6 +9,7 @@ It is built using
 - Typescript
 - Next JS
 - Web3Modal
+- Ethers
 ```
 
 ## Walkthrough Blog Post 🤖✉️
