@@ -59,14 +59,19 @@ export const EnterAddress = ({
               return;
             }
             setLoading(true);
-            const data = await getData(
-              isConnected,
-              address,
-              contractAddress,
-              walletProvider
-            );
-            setLoading(false);
-            setUserData({ ...data, retrieved: true, mode: "info" });
+            try {
+              const data = await getData(
+                isConnected,
+                address,
+                contractAddress,
+                walletProvider
+              );
+              setLoading(false);
+              setUserData({ ...data, retrieved: true, mode: "info" });
+            } catch (err) {
+              setLoading(false);
+              toggleModal({ open: true, type: "error" });
+            }
           }}
         >
           Get Data

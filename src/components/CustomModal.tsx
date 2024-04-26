@@ -44,6 +44,25 @@ const CopyToClipboard = ({
   );
 };
 
+const Error = () => (
+  <div className={styles.modalContent}>
+    <h2 className={styles.modalTitle}>Something went wrong 🚨</h2>
+    <p className={styles.exampleTitle}>
+      Did you enter a valid contract address?
+    </p>
+    <div className={styles.example}>
+      <p className={styles.exampleTitle}>For example:</p>
+
+      <div className={styles.copyContainer}>
+        <CopyToClipboard
+          address="0x6B175474E89094C44Da98b954EedeAC495271d0F"
+          label="Dai Stablecoin"
+        />
+      </div>
+    </div>
+  </div>
+);
+
 const InvalidAddress = () => (
   <div className={styles.modalContent}>
     <h2 className={styles.modalTitle}>Invalid Address 🚨</h2>
@@ -116,6 +135,7 @@ export const CustomModal = ({
 
         {modal.type === "invalidAddress" && <InvalidAddress />}
         {modal.type === "exampleAddress" && <ExampleAddress />}
+        {modal.type === "error" && <Error />}
       </div>
     </div>
   );
