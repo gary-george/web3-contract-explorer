@@ -12,14 +12,13 @@ It is built using
 - Ethers
 ```
 
-## Walkthrough Blog Post 🤖✉️
+## Overview Blog Post 🤖✉️
 
-... Coming soon
+[https://garygeorge84.medium.com/create-a-web3-project-with-typescript-a5dcf27ee5e2](https://garygeorge84.medium.com/create-a-web3-project-with-typescript-a5dcf27ee5e2)
 
 ## Demo URL 🖥️
 
-
-[https://web3-contract-explorer-ruby.vercel.app](https://web3-contract-explorer-ruby.vercel.app) 
+[https://web3-contract-explorer-ruby.vercel.app](https://web3-contract-explorer-ruby.vercel.app)
 
 ## Running locally 🚀
 
