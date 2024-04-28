@@ -3,7 +3,7 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
 // Create your own projectId at https://cloud.walletconnect.com
-const projectId = "b0c2e15593ff6cb3b507ee9c651fe423";
+const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID;
 
 const mainnet = {
   chainId: 1,
@@ -32,7 +32,7 @@ const ethersConfig = defaultConfig({
 createWeb3Modal({
   ethersConfig,
   chains: [mainnet],
-  projectId,
+  projectId: `${projectId}`,
   enableAnalytics: true,
   enableOnramp: true,
 });
