@@ -1,5 +1,7 @@
 ## Introduction 🚀
 
+![alt text](image.png)
+
 This project allows a user to input any 'Ethereum Mainnet Contract Address' and retrieve information & transaction history for it.
 This is built to be a helpful project for people trying to get started building Web3 projects.
 
